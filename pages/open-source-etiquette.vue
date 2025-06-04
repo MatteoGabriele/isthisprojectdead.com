@@ -8,13 +8,11 @@ useSeoMeta({
 
 <template>
   <div>
-    <h1 class="text-center font-secondary font-extrabold text-5xl mb-12">
-      Open Source Etiquette
-    </h1>
+    <h1 class="sr-only">Open Source Etiquette</h1>
 
     <ul class="space-y-4">
       <li
-        class="text-center text-xl text-indigo-200"
+        class="text-center text-lg text-indigo-200"
         v-for="(item, index) in etiquette"
         :key="index"
       >
