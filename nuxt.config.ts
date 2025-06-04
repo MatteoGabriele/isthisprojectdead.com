@@ -10,6 +10,15 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "en",
+      },
+      title: "Is this project dead?",
+    },
+  },
+  
   icon: {
     mode: "css",
     cssLayer: "base",

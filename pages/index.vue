@@ -1,22 +1,11 @@
 <script setup lang="ts">
+import etiquette from "~/assets/etiquette.json";
+
 const search = ref<string>("");
 const hasResponse = ref<boolean>(false);
 
-const reasons = [
-  "Be kind. Maintainers have lives too.",
-  "If you see a stale issue, ask if you can help fix it!",
-  "Open source is a team sport. Offer help instead of asking for updates.",
-  "Maintainers aren’t robots—give them a break!",
-  "Instead of complaining, see if you can pitch in.",
-  "A stale repo isn’t always dead—maybe it just doesn’t need updates!",
-  "Don’t forget to say thank you—maintainers love appreciation.",
-  "Be patient—open source runs on spare time, not deadlines.",
-  "Ask with kindness, and you’re more likely to get help!",
-  "Open source is teamwork—your help makes a difference.",
-];
-
-const randomNumber = Math.floor(Math.random() * reasons.length);
-const randomReason = reasons[randomNumber];
+const randomNumber = Math.floor(Math.random() * etiquette.length);
+const randomReason = etiquette[randomNumber];
 
 function onFormSubmit(): void {
   if (!search.value) {
@@ -34,19 +23,33 @@ function onFormSubmit(): void {
         class="text-lg text-stone-600 hover:text-teal-300"
         target="_blank"
         href="https://github.com/MatteoGabriele/isthisprojectdead.com"
+        aria-label="github repository of this website"
       >
-        <Icon name="mdi:github" />
+        <Icon aria-hidden="true" name="mdi:github" />
       </a>
     </header>
     <main class="p-4 md:p-8 flex flex-col items-center justify-center flex-1">
       <template v-if="hasResponse">
-        <div class="flex flex-col items-center">
+        <div
+          aria-live="polite"
+          role="status"
+          class="flex flex-col items-center"
+        >
           <h1
-            class="text-[60vw] leading-[60vw] lg:text-[60vh] lg:leading-[60vh] font-secondary font-bold"
+            class="text-[60vw] leading-[60vw] lg:text-[60vh] lg:leading-[50vh] font-secondary font-bold"
+            aria-label="No, this project is not dead."
           >
             NO
           </h1>
-          <p class="text-xl">{{ randomReason }}</p>
+          <p>The project is not dead!</p>
+          <p class="text-2xl text-stone-400 mt-1">{{ randomReason }}</p>
+
+          <NuxtLink
+            to="/open-source-etiquette"
+            class="mt-12 underline hover:text-teal-300"
+          >
+            More answers
+          </NuxtLink>
         </div>
       </template>
       <template v-else>
@@ -65,9 +68,16 @@ function onFormSubmit(): void {
           <form
             @submit.prevent="onFormSubmit"
             class="max-w-xl mx-auto mt-12 w-full flex flex-col md:flex-row"
+            aria-describedby="formDescription"
           >
+            <p id="formDescription" class="sr-only">
+              After submitting, you'll receive a message about open source
+              maintenance
+            </p>
+            <label for="projectName" class="sr-only">Project name</label>
             <input
-              placeholder="The name of your favourite project"
+              id="projectName"
+              placeholder="Is this project dead? Let’s see!"
               class="border outline-stone-300 flex-1 px-4 py-4 placeholder:text-center md:placeholder:text-left"
               type="text"
               v-model="search"
@@ -93,8 +103,9 @@ function onFormSubmit(): void {
           class="hover:text-teal-300 underline underline-offset-2"
           target="_blank"
         >
-          open source</a
-        >—because asking nicely is always better.
+          open source
+        </a>
+        —because asking nicely is always better.
       </p>
 
       <div class="flex shrink-0 items-center gap-1 text-stone-600">
