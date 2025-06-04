@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import etiquette from "~/assets/etiquette.json";
 
-const randomNumber = Math.floor(Math.random() * etiquette.length);
-const randomReason = etiquette[randomNumber];
+const randomNumber = useState("random_number", () => {
+  return Math.floor(Math.random() * etiquette.length);
+});
+
+const randomReason = computed<string>(() => {
+  return etiquette[randomNumber.value];
+});
 </script>
 
 <template>
