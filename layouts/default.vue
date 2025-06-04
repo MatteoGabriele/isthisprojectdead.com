@@ -2,7 +2,9 @@
 
 <template>
   <div class="h-screen flex flex-col">
-    <header class="sticky top-0 p-4 flex justify-between">
+    <header
+      class="sticky top-0 flex justify-between p-4 bg-stone-950 shadow-2xl shadow-stone-950"
+    >
       <NuxtLink
         class="text-lg text-stone-600 hover:text-teal-300"
         to="/"
@@ -29,7 +31,7 @@
       class="sticky bottom-0 flex flex-col justify-center md:flex-row items-center gap-6 md:justify-between p-4 bg-stone-950 shadow-2xl shadow-stone-950"
     >
       <p class="text-stone-600 text-sm text-center md:text-left">
-        * A humorous nudge on how to be a better part of
+        * This website is a humorous nudge on how to be a better part of
         <a
           href="https://en.wikipedia.org/wiki/Open-source_software_development"
           class="hover:text-teal-300 underline underline-offset-2"

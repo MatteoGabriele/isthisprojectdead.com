@@ -1,46 +1,11 @@
 <script setup lang="ts">
-import etiquette from "~/assets/etiquette.json";
-
-const search = ref<string>("");
-const hasResponse = ref<boolean>(false);
-
-const randomNumber = Math.floor(Math.random() * etiquette.length);
-const randomReason = etiquette[randomNumber];
-
 function onFormSubmit(): void {
-  if (!search.value) {
-    return;
-  }
-
-  hasResponse.value = true;
+  useRouter().push("/result");
 }
 </script>
 
 <template>
-  <div
-    v-if="hasResponse"
-    aria-live="polite"
-    role="status"
-    class="flex flex-col items-center"
-  >
-    <h1
-      class="text-[60vw] leading-[60vw] lg:text-[60vh] lg:leading-[50vh] font-secondary font-bold"
-      aria-label="No, this project is not dead."
-    >
-      NO
-    </h1>
-    <p>The project is not dead!</p>
-    <p class="text-2xl text-stone-400 mt-1">{{ randomReason }}</p>
-
-    <NuxtLink
-      to="/open-source-etiquette"
-      class="mt-12 underline hover:text-teal-300"
-    >
-      Open-source etiquette
-    </NuxtLink>
-  </div>
-
-  <div v-else class="max-w-4xl 2xl:max-w-7xl">
+  <div class="max-w-4xl 2xl:max-w-7xl">
     <header class="flex flex-col gap-4 text-center">
       <h1
         class="font-secondary font-bold text-5xl md:text-8xl 2xl:text-9xl text-balance"
@@ -66,7 +31,6 @@ function onFormSubmit(): void {
         placeholder="Is this project dead? Let’s see!"
         class="border outline-stone-300 flex-1 px-4 py-4 placeholder:text-center md:placeholder:text-left"
         type="text"
-        v-model="search"
         required
       />
       <button

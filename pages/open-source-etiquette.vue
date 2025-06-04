@@ -8,21 +8,21 @@ useSeoMeta({
 
 <template>
   <div>
-    <h1 class="font-secondary font-extrabold text-3xl mb-12">
-      Open Source Etiquette Tips
+    <h1 class="text-center font-secondary font-extrabold text-5xl mb-12">
+      Open Source Etiquette
     </h1>
 
-    <ul class="space-y-1">
+    <ul class="space-y-4">
       <li
-        class="text-xl text-purple-200"
+        class="text-center text-xl text-indigo-200"
         v-for="(item, index) in etiquette"
         :key="index"
       >
-        - {{ item }}
+        {{ item }}
       </li>
     </ul>
 
-    <div class="mt-12">
+    <div class="mt-12 text-center">
       <h2 class="text-purple-200">Want to add more?</h2>
       <p>
         Consider
