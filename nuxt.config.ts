@@ -12,10 +12,10 @@ export default defineNuxtConfig({
   
   app: {
     head: {
+      title: "Is this project dead?",
       htmlAttrs: {
         lang: "en",
-      },
-      title: "Is this project dead?",
+      },      
     },
   },
   

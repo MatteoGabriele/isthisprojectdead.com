@@ -10,7 +10,7 @@
         to="/"
         aria-label="Home page"
       >
-        <Icon aria-hidden="true" name="mdi:robot-dead-outline" />
+        <Icon aria-hidden="true" name="mdi:skull" />
       </NuxtLink>
 
       <a
@@ -42,7 +42,7 @@
         —because asking nicely is always better.
       </p>
 
-      <div class="flex shrink-0 items-center gap-1 text-stone-600">
+      <div class="flex text-sm shrink-0 items-center gap-1 text-stone-600">
         Build with <Icon name="ic:sharp-favorite-border" /> by
         <a
           class="hover:text-teal-300 underline underline-offset-2"

@@ -34,7 +34,7 @@ function onFormSubmit(): void {
         required
       />
       <button
-        class="border text-center mt-2 py-2 md:m-0 md:py-0 md:border-l-0 px-4 hover:bg-stone-900"
+        class="md:border text-center mt-2 py-2 md:m-0 md:py-0 md:border-l-0 px-4 hover:bg-stone-900"
       >
         Unveil the Truth
       </button>
