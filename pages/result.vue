@@ -14,7 +14,9 @@ const randomReason = etiquette[randomNumber];
       NO
     </h1>
     <p>The project is not dead!</p>
-    <p class="text-2xl text-stone-400 mt-1">{{ randomReason }}</p>
+    <p class="text-2xl text-center text-balance text-stone-400 mt-1">
+      {{ randomReason }}
+    </p>
 
     <NuxtLink
       to="/open-source-etiquette"

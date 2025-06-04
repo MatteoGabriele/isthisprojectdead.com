@@ -6,7 +6,7 @@
       class="sticky top-0 flex justify-between p-4 bg-stone-950 shadow-2xl shadow-stone-950"
     >
       <NuxtLink
-        class="text-lg text-stone-600 hover:text-teal-300"
+        class="text-xl text-stone-600 hover:text-teal-300"
         to="/"
         aria-label="Home page"
       >
@@ -14,7 +14,7 @@
       </NuxtLink>
 
       <a
-        class="text-lg text-stone-600 hover:text-teal-300"
+        class="text-xl text-stone-600 hover:text-teal-300"
         target="_blank"
         href="https://github.com/MatteoGabriele/isthisprojectdead.com"
         aria-label="github repository of this website"

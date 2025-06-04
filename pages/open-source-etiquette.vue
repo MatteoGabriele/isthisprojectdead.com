@@ -12,7 +12,7 @@ useSeoMeta({
 
     <ul class="space-y-4">
       <li
-        class="text-center text-lg text-indigo-200"
+        class="text-center text-balance text-lg text-indigo-200"
         v-for="(item, index) in etiquette"
         :key="index"
       >
