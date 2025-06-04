@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-body: "Switzer";
+  --font-secondary: "Cabinet Grotesk";
+}
+
+body {
+  @apply bg-stone-950 text-purple-300 selection:bg-yellow-400 selection:text-purple-500;
+  @apply font-body;
+}
