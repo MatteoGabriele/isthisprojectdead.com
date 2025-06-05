@@ -28,10 +28,6 @@ export default defineNuxtConfig({
           content:
             "Answering the world's most annoying question in open source",
         },
-        {
-          name: "og:image",
-          content: "https://isthisprojectdead.com/ogimage.jpg",
-        },
       ],
       htmlAttrs: {
         lang: "en",
