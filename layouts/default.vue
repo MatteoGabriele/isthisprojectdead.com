@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
+const isIndexPage = computed<boolean>(() => route.path === "/");
 </script>
 
 <template>
@@ -8,10 +9,10 @@ const route = useRoute();
       class="sticky top-0 flex justify-between p-4 bg-stone-950 shadow-2xl shadow-stone-950"
     >
       <NuxtLink
-        class="text-xl text-stone-400 hover:text-teal-300"
+        class="text-xl text-stone-400 hover:text-teal-300 flex items-center gap-1"
         to="/"
         aria-label="Home page"
-        :aria-current="route.path === '/' ? 'page' : undefined"
+        :aria-current="isIndexPage ? 'page' : undefined"
       >
         <Icon aria-hidden="true" name="mdi:skull" />
       </NuxtLink>

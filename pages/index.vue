@@ -37,7 +37,7 @@ async function onFormSubmit(): Promise<void> {
 
     <form
       @submit.prevent="onFormSubmit"
-      class="max-w-xl mx-auto mt-12 w-full flex flex-col md:flex-row"
+      class="max-w-xl mx-auto mt-12 w-full flex flex-col md:flex-row hover:shadow-2xl"
       aria-describedby="formDescription"
     >
       <p id="formDescription" class="sr-only">
@@ -48,12 +48,12 @@ async function onFormSubmit(): Promise<void> {
       <input
         id="projectName"
         placeholder="Is this project dead? Let's see!"
-        class="border outline-stone-300 flex-1 px-4 py-4 placeholder:text-center md:placeholder:text-left"
+        class="border transition-colors outline-stone-300 flex-1 px-6 py-4 placeholder:text-center md:placeholder:text-left"
         type="text"
         required
       />
       <button
-        class="md:border text-center mt-2 py-2 md:m-0 md:py-0 md:border-l-0 px-4 hover:bg-stone-900"
+        class="md:border transition-colors text-center mt-2 py-2 md:m-0 md:py-0 md:border-l-0 px-6 hover:bg-purple-300 border-purple-300 hover:text-black"
       >
         Unveil the Truth
       </button>
