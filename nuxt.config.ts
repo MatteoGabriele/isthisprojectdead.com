@@ -2,23 +2,30 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
-  modules: ['@nuxt/fonts', '@nuxt/icon'],
+  compatibilityDate: "2025-05-15",
+  devtools: { enabled: false },
+  modules: ["@nuxt/fonts", "@nuxt/icon"],
   css: ["~/assets/css/main.css"],
   vite: {
     plugins: [tailwindcss()],
   },
-  
+
   app: {
     head: {
       title: "Is this project dead?",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Answering the world's most annoying question in open source",
+        },
+      ],
       htmlAttrs: {
         lang: "en",
-      },      
+      },
     },
   },
-  
+
   icon: {
     mode: "css",
     cssLayer: "base",
@@ -38,4 +45,4 @@ export default defineNuxtConfig({
       },
     ],
   },
-})
+});

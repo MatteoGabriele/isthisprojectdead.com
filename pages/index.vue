@@ -17,7 +17,7 @@ async function onFormSubmit(): Promise<void> {
 
   await fetchTruth();
 
-  useRouter().push("/result");
+  useRouter().push("/no");
 }
 </script>
 
@@ -31,7 +31,7 @@ async function onFormSubmit(): Promise<void> {
         Is this project dead?
       </h1>
       <p class="text-xl md:text-2xl font-extralight text-balance">
-        Answering the world’s most annoying question in open source*
+        Answering the world's most annoying question in open source*
       </p>
     </header>
 
@@ -41,12 +41,13 @@ async function onFormSubmit(): Promise<void> {
       aria-describedby="formDescription"
     >
       <p id="formDescription" class="sr-only">
-        After submitting, you'll receive a message about open source maintenance
+        After submitting, you'll receive a message about the status of the
+        project
       </p>
       <label for="projectName" class="sr-only">Project name</label>
       <input
         id="projectName"
-        placeholder="Is this project dead? Let’s see!"
+        placeholder="Is this project dead? Let's see!"
         class="border outline-stone-300 flex-1 px-4 py-4 placeholder:text-center md:placeholder:text-left"
         type="text"
         required

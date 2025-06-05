@@ -1,1 +1,1 @@
-export const LOADER_INTERVAL_DELAY: number = 3000;
+export const LOADER_INTERVAL_DELAY: number = 3200;

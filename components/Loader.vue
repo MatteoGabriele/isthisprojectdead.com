@@ -27,8 +27,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="text-center">
-    <Icon name="mdi:cloud-download" class="text-2xl animate-pulse" />
-    <p>{{ message }}</p>
+  <div class="text-center" role="status">
+    <Icon
+      aria-hidden="true"
+      name="mdi:cloud-download"
+      class="text-2xl animate-pulse"
+    />
+    <p aria-live="polite">{{ message }}</p>
   </div>
 </template>
