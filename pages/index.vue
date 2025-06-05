@@ -1,11 +1,29 @@
 <script setup lang="ts">
-function onFormSubmit(): void {
+import loading from "~/assets/loading.json";
+import { LOADER_INTERVAL_DELAY } from "~/constants";
+
+const loadingTruth = ref<boolean>(false);
+
+async function fetchTruth(): Promise<void> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, LOADER_INTERVAL_DELAY * loading.length);
+  });
+}
+
+async function onFormSubmit(): Promise<void> {
+  loadingTruth.value = true;
+
+  await fetchTruth();
+
   useRouter().push("/result");
 }
 </script>
 
 <template>
-  <div class="max-w-4xl 2xl:max-w-7xl">
+  <Loader v-if="loadingTruth" />
+  <div v-else class="max-w-4xl 2xl:max-w-7xl">
     <header class="flex flex-col gap-4 text-center">
       <h1
         class="font-secondary font-bold text-5xl md:text-8xl 2xl:text-9xl text-balance"
