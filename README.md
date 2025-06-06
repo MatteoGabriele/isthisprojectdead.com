@@ -1,75 +1,31 @@
-# Nuxt Minimal Starter
+# Is This Project Dead?
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A playful website dedicated to the most controversial question in open source.
 
-## Setup
+👉 [Check it out live!](https://isthisprojectdead.com)
 
-Make sure to install dependencies:
+---
 
-```bash
-# npm
-npm install
+### About
+ 
+It’s a playful tool that gently reminds folks to be patient and considerate in open-source spaces, while having some fun along the way.
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+### Tech Stack
 
-# bun
-bun install
-```
+- Built with [Nuxt](https://nuxt.com)
+- Deployed on [Netlify](https://netlify.com)
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+### Contributing
 
-```bash
-# npm
-npm run dev
+Feel like adding more?  
+Open a pull request!
 
-# pnpm
-pnpm dev
+---
 
-# yarn
-yarn dev
+### License
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[MIT](LICENSE)
