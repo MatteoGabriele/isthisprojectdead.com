@@ -13,11 +13,11 @@ const randomReason = computed<string>(() => {
 <template>
   <div class="flex flex-col items-center">
     <h1
-      class="text-[60vw] leading-[50vw] lg:text-[60vh] lg:leading-[40vh] font-secondary font-bold"
+      class="text-[60vw] leading-[50vw] lg:text-[60vh] lg:leading-[50vh] font-secondary font-bold"
     >
       NO
     </h1>
-    <h2 class="text-xl mt-4">The project is not dead!</h2>
+    <h2 class="text-xl mt-4">Friendly etiquette tip:</h2>
     <p
       class="text-2xl font-extralight text-center text-balance text-stone-300 mt-1"
     >
