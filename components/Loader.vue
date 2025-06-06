@@ -27,7 +27,10 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="text-center opacity-0 animate-fade-in" role="status">
+  <div
+    class="flex items-center flex-col opacity-0 animate-fade-in"
+    role="status"
+  >
     <Icon
       aria-hidden="true"
       name="mdi:cloud-download"

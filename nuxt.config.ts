@@ -38,10 +38,9 @@ export default defineNuxtConfig({
       },
     },
   },
-
+  
   icon: {
-    mode: "css",
-    cssLayer: "base",
+    mode: 'svg'
   },
 
   fonts: {
