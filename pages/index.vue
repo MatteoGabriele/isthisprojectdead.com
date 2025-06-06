@@ -47,7 +47,7 @@ async function onFormSubmit(): Promise<void> {
       <label for="projectName" class="sr-only">Project name</label>
       <input
         id="projectName"
-        placeholder="Is this project dead? Let's see!"
+        placeholder="Type the project name"
         class="border transition-colors outline-stone-300 flex-1 px-6 py-4 placeholder:text-center md:placeholder:text-left"
         type="text"
         required
