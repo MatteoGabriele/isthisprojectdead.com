@@ -6,7 +6,7 @@ const isIndexPage = computed<boolean>(() => route.path === "/");
 <template>
   <div class="h-svh flex flex-col">
     <header
-      class="sticky top-0 flex justify-between p-4 bg-stone-950 shadow-2xl shadow-stone-950"
+      class="sm:sticky sm:top-0 flex justify-between p-8 md:p-4 bg-stone-950 shadow-2xl shadow-stone-950"
     >
       <NuxtLink
         class="text-xl text-stone-400 hover:text-teal-300 flex items-center gap-1"
@@ -27,12 +27,12 @@ const isIndexPage = computed<boolean>(() => route.path === "/");
       </a>
     </header>
 
-    <main class="p-4 md:p-8 flex flex-col items-center justify-center flex-1">
+    <main class="p-8 flex flex-col items-center justify-center flex-1">
       <slot />
     </main>
 
     <footer
-      class="sticky bottom-0 flex flex-col justify-center md:flex-row items-center gap-6 md:justify-between p-4 bg-stone-950 shadow-2xl shadow-stone-950"
+      class="lg:sticky lg:bottom-0 flex flex-col justify-center md:flex-row items-center gap-6 md:justify-between p-8 md:p-4 bg-stone-950 shadow-2xl shadow-stone-950"
     >
       <p class="text-stone-400 text-sm text-center md:text-left">
         * This website is a humorous nudge on how to be a better part of

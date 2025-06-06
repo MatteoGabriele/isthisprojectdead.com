@@ -53,7 +53,7 @@ async function onFormSubmit(): Promise<void> {
         required
       />
       <button
-        class="md:border transition-colors text-center mt-2 py-2 md:m-0 md:py-0 md:border-l-0 px-6 hover:bg-purple-300 border-purple-300 hover:text-black"
+        class="md:border transition-colors hover:text-white text-center mt-2 py-2 md:m-0 md:py-0 md:border-l-0 px-6 md:hover:bg-purple-300 border-purple-300 md:hover:text-black"
       >
         Unveil the Truth
       </button>

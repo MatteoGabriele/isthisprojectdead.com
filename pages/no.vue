@@ -13,7 +13,7 @@ const randomReason = computed<string>(() => {
 <template>
   <div class="flex flex-col items-center">
     <h1
-      class="text-[60vw] leading-[60vw] lg:text-[60vh] lg:leading-[48vh] font-secondary font-bold"
+      class="text-[60vw] leading-[50vw] lg:text-[60vh] lg:leading-[40vh] font-secondary font-bold"
     >
       NO
     </h1>
@@ -25,7 +25,7 @@ const randomReason = computed<string>(() => {
     </p>
 
     <div
-      class="mt-12 flex flex-col items-center gap-2 border-t pt-8 border-stone-800"
+      class="mt-12 text-center flex flex-col items-center gap-2 border-t pt-8 border-stone-800"
     >
       <div class="flex gap-2 items-baseline">
         <Icon name="mdi-sparkles" class="text-sm" />
