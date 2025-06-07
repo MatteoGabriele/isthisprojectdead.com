@@ -14,15 +14,11 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  plugins: ["~/plugins/simpleanalytics.client"],
+
   app: {
     head: {
       title: "Is this project dead?",
-      script: [
-        {
-          async: true,
-          src: "https://scripts.simpleanalyticscdn.com/latest.js",
-        },
-      ],
       meta: [
         {
           name: "description",
