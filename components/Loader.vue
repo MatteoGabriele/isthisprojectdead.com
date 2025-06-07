@@ -33,8 +33,8 @@ onUnmounted(() => {
   >
     <Icon
       aria-hidden="true"
-      name="mdi:cloud-download"
-      class="text-2xl animate-pulse"
+      name="line-md:uploading-loop"
+      class="text-2xl mb-2 animate-pulse"
     />
     <Transition name="message" mode="out-in">
       <p

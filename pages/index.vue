@@ -12,10 +12,10 @@ async function fetchTruth(): Promise<void> {
   });
 }
 
-const saEvent = inject<(event: string) => void>("saEvent");
+const saEvent = inject<(event: string) => void>("saEvent", () => {});
 
 async function onFormSubmit(): Promise<void> {
-  saEvent?.("form_submitted");
+  saEvent("form_submitted");
 
   loadingTruth.value = true;
 
