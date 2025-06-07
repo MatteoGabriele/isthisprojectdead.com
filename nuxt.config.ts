@@ -3,9 +3,13 @@ import tailwindcss from "@tailwindcss/vite";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
+
   devtools: { enabled: false },
+
   modules: ["@nuxt/fonts", "@nuxt/icon"],
+
   css: ["~/assets/css/main.css"],
+
   vite: {
     plugins: [tailwindcss()],
   },
@@ -13,6 +17,12 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Is this project dead?",
+      script: [
+        {
+          async: true,
+          src: "https://scripts.simpleanalyticscdn.com/latest.js",
+        },
+      ],
       meta: [
         {
           name: "description",
@@ -38,9 +48,9 @@ export default defineNuxtConfig({
       },
     },
   },
-  
+
   icon: {
-    mode: 'svg'
+    mode: "svg",
   },
 
   fonts: {
