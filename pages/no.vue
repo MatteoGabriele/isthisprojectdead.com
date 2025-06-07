@@ -13,7 +13,7 @@ const randomReason = computed<string>(() => {
 <template>
   <div class="flex flex-col items-center">
     <h1
-      class="text-[60vw] leading-[50vw] lg:text-[60vh] lg:leading-[50vh] font-secondary font-bold"
+      class="text-[60vw] leading-[50vw] lg:text-[60vh] lg:leading-[46vh] font-secondary font-bold"
     >
       NO
     </h1>
