@@ -17,7 +17,7 @@ const randomReason = computed<string>(() => {
     >
       NO
     </h1>
-    <h2 class="text-xl mt-4">Friendly etiquette tip:</h2>
+    <h2 class="text-xl mt-4">Friendly open source etiquette tip:</h2>
     <p
       class="text-2xl font-extralight text-center text-balance text-stone-300 mt-1"
     >
