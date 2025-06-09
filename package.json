@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@tailwindcss/vite": "^4.1.8",
-    "simple-analytics-vue": "^3.0.2"
+    "@tailwindcss/vite": "^4.1.8"
   }
 }
