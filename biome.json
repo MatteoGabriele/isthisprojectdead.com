@@ -8,7 +8,7 @@
   "files": {
     "ignoreUnknown": false,
     "ignore": ["public", ".nuxt", ".output"],
-    "include": ["**/*.{ts|vue}", "plugins", "./nuxt.config.ts"]
+    "include": ["**/*.{ts|vue}", "./nuxt.config.ts"]
   },
   "formatter": {
     "enabled": true,

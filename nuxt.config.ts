@@ -14,8 +14,6 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  plugins: ["~/plugins/gtag.client"],
-
   app: {
     head: {
       title: "Is this project dead?",
